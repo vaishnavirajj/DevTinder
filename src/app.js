@@ -7,6 +7,8 @@ const app =express();
 // })
 
 
+//Order of routes matter alot
+
 //this will match all the HTTP method API calls to /home
 app.use("/home" ,(req,res)=> {
     res.send("You are at Home route server");
@@ -37,6 +39,20 @@ app.delete("/user" , (req,res) => {
     res.send("Data successfully deleted from the database!");
 });
 
+
+app.get("/user" , (req ,res) => {
+    console.log(req.query);
+    res.send("hahahhahaha");
+    
+})
+
+
+//Dynamic routes
+app.get("/user/:userId:name/:password" , (req,res) => {
+    console.log(req.params);
+    res.send({firstName: "Akshay" ,lastName:"Saini"});
+    
+});
 
 app.listen(3000 , () => {
     console.log("Server is running on port 3000");
