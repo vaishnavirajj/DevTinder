@@ -37,3 +37,29 @@
 -Write dummy auth middleware for admin
 -Write a dummy auth middleware for all user routes , except /user/login
 -Error Handling using app.use("/" , (err,req,res,next) = {});
+
+
+-Go to mongoDB website
+-Create a free cluster
+-Create a user
+-Get the connection string
+-Install mongo db compass
+-Create a database
+-Install mongodb package
+-Craete a connection rom code
+-documents CRUD - Create , Read , Update and Delete
+
+
+-Create a free cluster on mongoDB official website (Mongo Atlas)
+-Install mongoose library
+-Connect your application to the database "Connection-url"/devTinder
+-Call the connectDB function and connect to database before starting application on 7777
+-Create a userSchema & user Model
+-Create /signup API to add data to database
+-Push some documents using API calls from postman
+-Error Hnadling using try , catch
+
+
+-Difference between JSON and JavaScript
+-Add the express.json middleware to your app
+-Make your signup API dynamic to receive data from the end user
